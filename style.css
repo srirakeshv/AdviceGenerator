@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Manrope, sans-serif;
+    background-color: hsl(218, 23%, 16%);
+}
+h4{
+    margin: 0;
+}
+/* api generator for advice */
+main{
+    box-sizing: border-box;
+    max-width: 450px;
+    padding: 20px 30px;
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 10px;
+}
+main h4{
+    color: hsl(150, 100%, 66%);
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    letter-spacing: 3px;
+    text-align: center;
+}
+main h4 span{
+    color: hsl(150, 100%, 66%);
+}
+main p{
+    color: hsl(193, 38%, 86%);
+    font-size: 1.2rem;
+    line-height: 25px;
+    text-align: center;
+}
+main .line{
+    margin: 0 0 30px;
+}
+main .line img{
+    width: 100%;
+}
+main .dice{
+    margin-bottom: -10%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-color: hsl(150, 100%, 66%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dice img{
+    width: 15px;
+    height: 15px;
+}
+.dice:hover{
+    cursor: pointer;
+    box-shadow: 2px 3px 20px hsl(150, 100%, 66%);
+}
+@media all and (max-width:450px) {
+    main{
+        margin: 0 10px;
+    }
+    main .dice{
+        margin-bottom: -12.5%;
+    }
+    .line img{
+        content: url('images/pattern-divider-mobile.svg');
+    }
+}
+@media all and (max-width:300px) {
+    main .dice{
+        margin-bottom: -18.5%;
+    }
+}
